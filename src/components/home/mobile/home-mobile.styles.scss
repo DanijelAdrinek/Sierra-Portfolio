@@ -1,0 +1,106 @@
+$color-primary: #f857a8;
+$color-secondary: #ff5858;
+$color-neutral-lt: #fff;
+$color-neutral-med: #ddd;
+$color-neutral-dk: #444;
+
+// mixins
+
+@mixin skew {
+    transform: skewY(-20deg);
+}
+  
+@mixin unskew {
+    transform: skewY(20deg);
+}
+
+// DOM
+* {
+    box-sizing: border-box;
+}
+
+.home {
+
+    width: 85%;
+    margin: auto;
+
+    .mobile {
+
+        .section {
+            margin-top: 35px;
+        }
+
+        .brief-introduction {
+            margin-top: 75px;
+        }
+
+        .text-paragraph {
+            font-size: 18px;
+            margin: 15px;
+        }
+
+        .card {
+            height: 626px;
+            overflow: hidden;
+            border-radius: 15px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px 4px #999999;
+        
+            .decoration-element {
+                height: 100%;
+                width: calc(100% + 1px);
+                border-radius: 30px;
+                position: relative;
+                top: 29px;
+                background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+                @include skew;
+
+                .img-container {
+                    position: relative;
+                    top: 87px;
+                    display: flex;
+                    justify-content: center;
+                    @include unskew;
+
+                    img {
+                        height: 270px;
+                        border-radius: 30px;
+                        border: 1px solid black;
+                    }
+
+                }
+
+                .button-container {
+                    position: relative;
+                    top: 117px;
+                    @include unskew;
+                    width: 215px;
+                    margin: auto;
+                }
+            }
+        
+        }   
+    }
+}
+
+@media (max-width: 444px) {
+    .home {
+        .mobile {
+            .card {
+                height: 650px;
+                .decoration-element {
+                    .img-container {
+                        img {
+                            height: 250px !important;
+                        }
+                    }
+
+                    .button-container {
+                        width: 199px;
+                    }
+                }
+            }
+        }
+    }
+}
