@@ -13,7 +13,39 @@ $color-neutral-dk: #444;
     .desktop {
 
         .testemonials-container {
+            width: 90%;
+            margin: auto;
             margin-top: 200px;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: rgb(250, 250, 250);
+
+
+            .title {
+                text-align: center;
+            }
+
+            .testemonials {
+                background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+                width: 90%;
+                height: 450px;
+                margin: 40px auto;
+                border: 2px black solid;
+                box-shadow: 0 0 6px 2px #888888;
+
+                border-radius: 50px;
+                overflow: hidden;
+                
+                .cover {
+                    width: 100%;
+                    height: 110%;
+                    position: relative;
+                    top: -20px;
+                    background-color: rgba(0,0,0, 0.05);
+                    display: flex;
+
+                }
+            }
         }
 
     }
