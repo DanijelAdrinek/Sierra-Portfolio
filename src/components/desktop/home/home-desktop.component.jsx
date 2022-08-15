@@ -1,6 +1,5 @@
-
-import Intro from "../../intro/intro.component";
-import BriefIntroduction from "../../brief-introduction/brief-introduction.component";
+import Intro from "../../common/intro/intro.component";
+import BriefIntroduction from "../brief-introduction/brief-introduction.component";
 
 import "./home-desktop.styles.scss";
 

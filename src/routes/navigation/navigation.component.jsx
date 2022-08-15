@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import NavigationLink from "../../components/navigation-link/navigation-link.component";
+import NavigationLink from "../../components/common/navigation-link/navigation-link.component";
 import { useRef } from "react";
 
 const Navigation = () => {

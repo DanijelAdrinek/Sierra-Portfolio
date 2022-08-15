@@ -2,8 +2,8 @@ import "./home.styles.scss";
 
 import useWindowDimensions from "../../helpers/getWindowSize/get-window-size";
 
-import HomeMobile from "../../components/home/mobile/home-mobile.component";
-import HomeDesktop from "../../components/home/desktop/home-desktop.component";
+import HomeMobile from "../../components/mobile/home/home-mobile.component";
+import HomeDesktop from "../../components/desktop/home/home-desktop.component";
 
 const Home = () => {
   const { width } = useWindowDimensions();

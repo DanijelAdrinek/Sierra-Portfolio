@@ -1,0 +1,32 @@
+$color-primary: #f857a8;
+$color-secondary: #ff5858;
+$color-tercial: rgb(15, 223, 178);
+$color-forth: rgb(195, 255, 31);
+$color-neutral-lt: #fff;
+$color-neutral-med: #ddd;
+$color-neutral-dk: #444;
+
+// mixins
+
+@mixin move-quotemark-downwards {
+    position: relative;
+    top: 72%;
+}
+
+// DOM
+* {
+    box-sizing: border-box;
+}
+
+.home {
+
+    width: 85%;
+    margin: auto;
+
+    .mobile {
+
+        .section {
+            margin-top: 35px;
+        }
+    }
+}

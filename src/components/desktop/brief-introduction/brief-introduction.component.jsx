@@ -1,8 +1,8 @@
 import "./brief-introduction.scss";
 
-import beachImage from "../../assets/images/Sierra_beach.jpg";
-import sittingImage from "../../assets/images/Sierra_sitting.jpg";
-import Button from "../../components/button/button.component";
+import beachImage from "../../../assets/images/Sierra_beach.jpg";
+import sittingImage from "../../../assets/images/Sierra_sitting.jpg";
+import Button from "../../common/button/button.component";
 
 const BriefIntroduction = () => {
     return (

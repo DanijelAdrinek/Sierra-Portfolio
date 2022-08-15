@@ -1,10 +1,5 @@
 $color-primary: #f857a8;
 $color-secondary: #ff5858;
-$color-tercial: #7663f5;
-$color-forth: #48aff2;
-$color-neutral-lt: #fff;
-$color-neutral-med: #ddd;
-$color-neutral-dk: #444;
 
 // mixins
 
@@ -17,21 +12,9 @@ $color-neutral-dk: #444;
 }
 
 // DOM
-* {
-    box-sizing: border-box;
-}
 
 .home {
-
-    width: 85%;
-    margin: auto;
-
     .mobile {
-
-        .section {
-            margin-top: 35px;
-        }
-
         .brief-introduction {
             margin-top: 75px;
         }
@@ -83,47 +66,6 @@ $color-neutral-dk: #444;
                 }
             }
         
-        }
-        
-        .testemonials-container-parent {
-            margin-top: 60px;
-
-            .testemonials-container {
-                height: 600px;
-                width: 100%;
-                box-shadow: 0px 0px 10px 4px #999999;
-                border-radius: 30px;
-            }
-
-            .testemonials {
-                height: 530px;
-                width: 100%;
-                background-image: linear-gradient(to bottom right, $color-tercial, $color-forth);
-                border-radius: 30px;
-                overflow: hidden;
-
-                .cover {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    top: -16px;
-                    background-color: rgba(0,0,0, 0.05);
-                
-                    .text-container {
-                        width: 100%;
-                        height: 60%;
-                    }
-
-                    .image-and-rating-container {
-                        width: 100%;
-                        height: 40%;
-                        background-color: white;
-                    }                    
-
-                }
-
-            }
-
         }
     }
 }
