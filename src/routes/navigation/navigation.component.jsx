@@ -22,7 +22,7 @@ const Navigation = () => {
         <button id="menu" className="btn-nav" onClick={menuButtonClickHandler}><FontAwesomeIcon icon={faBars} /></button>
       </div>
       <div className="nav right">
-        <NavigationLink name="Home" />
+      <div className="nav-link active"><span className="nav-link-span"><span className="u-nav">Home</span></span></div>
         <NavigationLink name="About" />
         <NavigationLink name="Gallery" />
         <NavigationLink name="Contact" />

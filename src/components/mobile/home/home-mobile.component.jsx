@@ -5,14 +5,14 @@ import BriefIntroductionMobile from "../brief-introduction/brief-introduction.co
 import Testimonials from "../testimonials/testimonials.component";
 
 const HomeMobile = () => {
-    return (
-      <div className="mobile">
-        <Intro />
-        <BriefIntroductionMobile />
-        <section className="section achievements"></section>
-        <Testimonials />
-      </div>
-    );
+
+  return (
+    <div className="mobile">
+      <Intro />
+      <BriefIntroductionMobile />
+      <Testimonials />
+    </div>
+  );
 }
 
 export default HomeMobile;
