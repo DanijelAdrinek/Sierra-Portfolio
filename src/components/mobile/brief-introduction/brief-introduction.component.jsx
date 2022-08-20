@@ -1,4 +1,4 @@
-import "./brkief-introduction.styles.scss";
+import "./brief-introduction.styles.scss";
 
 import beachImage from "../../../assets/images/Sierra_beach.jpg";
 import sittingImage from "../../../assets/images/Sierra_sitting.jpg";
@@ -9,7 +9,7 @@ const BriefIntroductionMobile = () => {
     return (
         <section className="section brief-introduction">
             <div className="card">
-              <p class="text-paragraph">I've always dremt of becoming a professional model, and ever since I was a child, I was very passionate about keeping <br/> fit and looking good</p>
+              <p className="text-paragraph">I've always dremt of becoming a professional model, and ever since I was a child, I was very passionate about keeping <br/> fit and looking good</p>
               <div className="decoration-element">
                 <div className="img-container">
                   <img src={beachImage} alt="Sierra at the beach" />
@@ -22,7 +22,7 @@ const BriefIntroductionMobile = () => {
             </div>
 
             <div className="card">
-              <p class="text-paragraph">
+              <p className="text-paragraph">
                 I've always dremt of becoming a professional model, and ever since I was a child, I was very passionate about keeping <br/> fit and looking good
               </p>
               <div className="decoration-element">

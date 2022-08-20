@@ -1,0 +1,146 @@
+$color-tercial: rgb(15, 223, 178);
+$color-forth: rgb(195, 255, 31);
+
+$top-spacing: 80px;
+
+// mixins
+@mixin skew {
+    transform: skewX(20deg);
+}
+
+@mixin unskew {
+    transform: skewX(-20deg);
+}
+
+@mixin move-quotemark-downwards {
+    top: calc(100% + 14px);
+}
+
+// DOM
+.home {
+
+    .desktop {
+
+        .testemonials-section {
+            margin-top: 135px;
+            
+
+            .testemonials {
+                position: relative;
+                height: 535px;
+                width: 85%;
+            
+                .decoration {
+                    @include skew;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-image: linear-gradient(to bottom right, $color-tercial, $color-forth);
+                    left: 10%;
+                    border-radius: 30px;
+
+                }
+
+                .title {
+                    text-align: center;
+                    color: white;
+                    font-size: 60px;
+                    width: 100vw;
+                    z-index: 1;
+                    position: relative;
+                    top: 69px;
+                    right: 40px;
+                }
+
+                .content-container {
+                    display: flex;
+                    position: relative;
+                    top: 80px;
+                    left: calc(34% - 126px);
+                    gap: 15px;
+                    width: 850px;
+                    
+                    .text-and-rating-container {
+                        width: 100vw;
+                        z-index: 2;
+                        line-height: 43px;
+                        position: relative;
+                        color: white;
+                        flex: 5;
+                    }
+                    
+                    .quotation-mark-decoration {
+
+                        &-big{
+                            position: absolute;
+                            top: -20px;
+                            left: -30px;
+                            font-size: 80px;
+                            color: white;
+                            height: max-content;
+
+                            &.bottom {
+                                @include move-quotemark-downwards;
+                                left: calc(100% + 15px);
+                            }
+                        }
+
+                        &-small {
+                            position: absolute;
+                            font-size: 61px;
+                            color: white;
+                            height: max-content;
+                            top: -24px;
+                            left: -47px;
+
+                            &.bottom {
+                                @include move-quotemark-downwards;
+                                left: calc(100% + 38px);
+                            }
+                        }
+                    }
+
+                    .text {
+                        margin-left: 50px;
+                        font-size: 28px;
+                        width: 400px;
+                        max-height: 300px;
+                        position: relative;
+                    }
+
+                    .img-container {
+                        flex: 6;
+                        max-width: 285px;
+                        position: relative;
+                        height: 351px;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        box-shadow: 0px 0px 8px 1px #555555;
+
+                        img {
+                            height: 100%;
+                            margin-left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+
+                    .rating {
+                        position: absolute;
+                        display: flex;
+                        bottom: -38px;
+                        left: 47%;
+                        transform: translateX(-50%) translateY(-100%);
+                        width: 285px;
+                        height: 50px;
+                        justify-content: space-between;
+
+                        img {
+                            height: 42px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

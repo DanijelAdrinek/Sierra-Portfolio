@@ -1,6 +1,12 @@
 import validStar from "../../../assets/icons/star-valid.svg";
 import unvalidStar from "../../../assets/icons/star-unvalid.svg";
 
+/**
+ * takes the rating the user gave in the testemonials and returns a rating
+ * 
+ * @param {number} userRating 
+ * @returns 
+ */
 const Rating = ({ userRating }) => {
     
     const stars = [];

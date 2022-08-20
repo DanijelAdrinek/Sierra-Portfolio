@@ -8,7 +8,7 @@ const BriefIntroduction = () => {
     return (
         <section className="section brief-introduction">
         <div className="text-content text-content-left" style={{'--order': 1}}>
-            <p class="text-paragraph">I've always dremt of becoming a professional model, and ever since I was a child, I was very passionate about keeping  fit and <br/> looking good</p>
+            <p className="text-paragraph">I've always dremt of becoming a professional model, and ever since I was a child, I was very passionate about keeping  fit and <br/> looking good</p>
             <div className="button-container">
                 <Button>Gallery -&gt;</Button>
             </div>
@@ -26,7 +26,7 @@ const BriefIntroduction = () => {
           </div>
 
           <div className="text-content text-content-right" style={{'--order': 4}}>
-        <p class="text-paragraph">
+        <p className="text-paragraph">
             I've always dremt of becoming a professional model, and ever since I was a child, I was very passionate about keeping  fit and <br/> looking good
         </p>
         <div className="button-container">
