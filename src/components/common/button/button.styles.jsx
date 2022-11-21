@@ -1,6 +1,8 @@
-$main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+import styled from "styled-components";
 
-.button {
+const mainFont = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif";
+
+const ButtonStyles = styled.button`
   min-width: 165px;
   width: 100%;
   height: 50px;
@@ -46,4 +48,6 @@ $main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', '
       border: none;
     }
   }
-}
+`;
+
+export { ButtonStyles };
